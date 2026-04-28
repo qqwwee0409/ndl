@@ -1,0 +1,15 @@
+{
+"editor.fontFamily": "Noto Serif CJK JP",
+// "editor.fontFamily": "Noto Sans CJK JP",
+"editor.wordWrap": "on",
+"editor.fontSize": 24,
+"editor.glyphMargin": false,
+"editor.guides.indentation": false,
+"workbench.colorCustomizations":
+{
+  "editor.findMatchBackground": "#fb21b3",
+  "editor.findMatchHighlightBackground": "#288481ed",
+  "editor.findRangeHighlightBackground": "#433e3e55"
+},
+"inlineChat.affordance": "off",
+}

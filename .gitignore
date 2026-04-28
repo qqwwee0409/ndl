@@ -1,0 +1,4 @@
+*.wiki
+*.pdf
+tmp/
+jpg/
