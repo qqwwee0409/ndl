@@ -3,6 +3,7 @@ from argparse import ArgumentParser
 import os
 from PIL import Image
 
+
 def crop_margins(input_folder, output_folder, w, h, l, t):
     """
     指定したピクセル数だけ端を切り取る
@@ -10,14 +11,14 @@ def crop_margins(input_folder, output_folder, w, h, l, t):
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    valid_extensions = ('.jpg', '.jpeg', '.JPG', '.JPEG')
+    valid_extensions = (".jpg", ".jpeg", ".JPG", ".JPEG")
 
     for filename in os.listdir(input_folder):
         if filename.endswith(valid_extensions):
             img_path = os.path.join(input_folder, filename)
             with Image.open(img_path) as img:
                 width, height = img.size
-                new_box = (l, t, l+w, t+h)
+                new_box = (l, t, l + w, t + h)
                 print(width, height, new_box)
                 cropped_img = img.crop(new_box)
                 cropped_img.save(os.path.join(output_folder, filename))
@@ -34,7 +35,7 @@ def main():
     parser.add_argument("t", type=int)
     args = parser.parse_args()
     print(args)
-    os.makedirs( args.output, exist_ok=True)
+    os.makedirs(args.output, exist_ok=True)
     crop_margins(args.input, args.output, args.w, args.h, args.l, args.t)
 
 

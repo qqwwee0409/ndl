@@ -29,6 +29,7 @@ def get_map(args):
         def_map["讬"] = "託"
         def_map["涜"] = "瀆"
         def_map["即"] = "卽"
+        def_map["益"] = "益"
         def_map["腳"] = "脚"
         def_map["兔"] = "兎"
         def_map["眾"] = "衆"
@@ -36,10 +37,10 @@ def get_map(args):
         def_map["篭"] = "籠"
         def_map["蝉"] = "蟬"
         def_map["真"] = "眞"
-        def_map["姉"] = "姊"        
+        def_map["姉"] = "姊"
         def_map["恆"] = "恒"
         def_map["清"] = "淸"
-        def_map["青"] = "靑" 
+        def_map["青"] = "靑"
         def_map["視"] = "視"
         def_map["神"] = "神"
         def_map["祖"] = "祖"
@@ -68,34 +69,59 @@ def get_map(args):
         def_map["痴"] = "痴"
     return def_map
 
+
 def small_to_large_kana(text: str) -> str:
-    table = str.maketrans({
-        'ぁ': 'あ', 'ぃ': 'い', 'ぅ': 'う', 'ぇ': 'え', 'ぉ': 'お',
-        'っ': 'つ', 'ゃ': 'や', 'ゅ': 'ゆ', 'ょ': 'よ', 'ゎ': 'わ',
-        'ゕ': 'か', 'ゖ': 'け',
-        'ァ': 'ア', 'ィ': 'イ', 'ゥ': 'ウ', 'ェ': 'エ', 'ォ': 'オ',
-        'ッ': 'ツ', 'ャ': 'ヤ', 'ュ': 'ユ', 'ョ': 'ヨ', 'ヮ': 'ワ',
-        'ヵ': 'カ', 'ヴ': 'ブ',
-        #  'ヶ': 'ケ',
-    })
+    table = str.maketrans(
+        {
+            "ぁ": "あ",
+            "ぃ": "い",
+            "ぅ": "う",
+            "ぇ": "え",
+            "ぉ": "お",
+            "っ": "つ",
+            "ゃ": "や",
+            "ゅ": "ゆ",
+            "ょ": "よ",
+            "ゎ": "わ",
+            "ゕ": "か",
+            "ゖ": "け",
+            "ァ": "ア",
+            "ィ": "イ",
+            "ゥ": "ウ",
+            "ェ": "エ",
+            "ォ": "オ",
+            "ッ": "ツ",
+            "ャ": "ヤ",
+            "ュ": "ユ",
+            "ョ": "ヨ",
+            "ヮ": "ワ",
+            "ヵ": "カ",
+            "ヴ": "ブ",
+            #  'ヶ': 'ケ',
+        }
+    )
     return text.translate(table)
 
+
 def small_to_large_kan2a(text: str) -> str:
-    table = str.maketrans({
-        'ぁ': 'あ',
-        'ぃ': 'い',
-        'ぅ': 'う',
-        'ぇ': 'え',
-        'ぉ': 'お',
-        'っ': 'つ',
-        'ゃ': 'や',
-        'ゅ': 'ゆ',
-        'ょ': 'よ',
-        'ゎ': 'わ',
-        'ゕ': 'か',
-        'ゖ': 'け',
-    })
+    table = str.maketrans(
+        {
+            "ぁ": "あ",
+            "ぃ": "い",
+            "ぅ": "う",
+            "ぇ": "え",
+            "ぉ": "お",
+            "っ": "つ",
+            "ゃ": "や",
+            "ゅ": "ゆ",
+            "ょ": "よ",
+            "ゎ": "わ",
+            "ゕ": "か",
+            "ゖ": "け",
+        }
+    )
     return text.translate(table)
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -104,7 +130,7 @@ def main():
     parser.add_argument("--hira", action="store_true")
     parser.add_argument("--modest", type=int, default=0)
     parser.add_argument("--diff", action="store_true")
-    parser.add_argument("--daiji", action="store_true")    
+    parser.add_argument("--daiji", action="store_true")
     args = parser.parse_args()
 
     cc = OpenCC("jp2t")

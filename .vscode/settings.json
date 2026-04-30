@@ -1,6 +1,7 @@
 {
-"editor.fontFamily": "Noto Serif CJK JP",
+// "editor.fontFamily": "Noto Serif CJK JP",
 // "editor.fontFamily": "Noto Sans CJK JP",
+//'Droid Sans Mono', monospace
 "editor.wordWrap": "on",
 "editor.fontSize": 24,
 "editor.glyphMargin": false,
@@ -11,5 +12,27 @@
   "editor.findMatchHighlightBackground": "#288481ed",
   "editor.findRangeHighlightBackground": "#433e3e55"
 },
+"editor.scrollbar.vertical": "visible",
+"editor.minimap.enabled": false,
 "inlineChat.affordance": "off",
+"editor.snippetSuggestions": "none",
+"editor.quickSuggestions": {
+  "comments": "off",
+  "strings": "off",
+  "other": "off"
+},
+"editor.suggestOnTriggerCharacters": false,
+"editor.wordBasedSuggestions": "off",
+"editor.quickSuggestionsDelay": 1000000000,
+"python-envs.defaultEnvManager": "ms-python.python:venv",
+"python-envs.defaultPackageManager": "ms-python.python:pip",
+// "editor.acceptSuggestionOnEnter": "off",
+// "editor.tabCompletion": "off",
+// "editor.parameterHints.enabled": false,
+// "editor.hover.enabled": "off",
+
+
+
+
+
 }
