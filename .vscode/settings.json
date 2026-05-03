@@ -1,7 +1,7 @@
 {
+// memo [\s\n\r]+
 // "editor.fontFamily": "Noto Serif CJK JP",
 // "editor.fontFamily": "Noto Sans CJK JP",
-//'Droid Sans Mono', monospace
 "editor.wordWrap": "on",
 "editor.fontSize": 24,
 "editor.glyphMargin": false,
@@ -26,6 +26,11 @@
 "editor.quickSuggestionsDelay": 1000000000,
 "python-envs.defaultEnvManager": "ms-python.python:venv",
 "python-envs.defaultPackageManager": "ms-python.python:pip",
+"[python]": {
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.formatOnSave": true
+}
+
 // "editor.acceptSuggestionOnEnter": "off",
 // "editor.tabCompletion": "off",
 // "editor.parameterHints.enabled": false,
