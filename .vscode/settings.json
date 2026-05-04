@@ -1,6 +1,6 @@
 {
 // memo [\s\n\r]+
-// "editor.fontFamily": "Noto Serif CJK JP",
+"editor.fontFamily": "Noto Serif CJK JP",
 // "editor.fontFamily": "Noto Sans CJK JP",
 "editor.wordWrap": "on",
 "editor.fontSize": 24,
