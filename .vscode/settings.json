@@ -1,13 +1,21 @@
 {
 // memo [\s\n\r]+
 "editor.fontFamily": "Noto Serif CJK JP",
-// "editor.fontFamily": "Noto Sans CJK JP",
+// "editor.fontFamily": "Gentium Plus",  // for Greek
+// "editor.fontFamily": "monospace",
+// "editor.fontFamily": "'JetBrains Mono', 'Consolas', monospace",
+// "editor.fontFamily": "'JetBrains Mono MediumItalic'",
+// "editor.fontWeight": "300",
+// "editor.fontLigatures": true,
+"editor.autoIndent": "none",
+"editor.wrappingIndent": "none",
 "editor.wordWrap": "on",
-"editor.fontSize": 24,
+"editor.fontSize": 20,
 "editor.glyphMargin": false,
 "editor.guides.indentation": false,
-"workbench.colorCustomizations":
-{
+"workbench.colorCustomizations": {
+  // "editorUnicodeHighlight.border": "#ff0000", // ハイライトの枠の色
+  // "editorWhitespace.foreground": "#444444",    // 半角スペース（ドット）の色
   "editor.findMatchBackground": "#fb21b3",
   "editor.findMatchHighlightBackground": "#288481ed",
   "editor.findRangeHighlightBackground": "#433e3e55"
