@@ -15,3 +15,9 @@ xmin = 430
 ymin = 2301
 xmax = 3100
 ymax = 3300
+
+[section_4]
+xmin = 430
+ymin = 3310
+xmax = 3100
+ymax = 4300
