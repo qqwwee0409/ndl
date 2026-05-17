@@ -1,6 +1,6 @@
 {
 // memo [\s\n\r]+
-"editor.fontFamily": "Noto Serif CJK JP",
+// "editor.fontFamily": "Noto Serif CJK JP",
 // "editor.fontFamily": "Gentium Plus",  // for Greek
 // "editor.fontFamily": "monospace",
 // "editor.fontFamily": "'JetBrains Mono', 'Consolas', monospace",
@@ -37,15 +37,14 @@
 "[python]": {
   "editor.defaultFormatter": "ms-python.black-formatter",
   "editor.formatOnSave": true
-}
-
+},
+"[rust]": {
+    "editor.defaultFormatter": "statiolake.vscode-rustfmt",
+    "editor.formatOnSave": true  //optional
+},
 // "editor.acceptSuggestionOnEnter": "off",
 // "editor.tabCompletion": "off",
 // "editor.parameterHints.enabled": false,
 // "editor.hover.enabled": "off",
-
-
-
-
 
 }

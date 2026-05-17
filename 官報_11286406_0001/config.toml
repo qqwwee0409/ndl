@@ -1,0 +1,17 @@
+[section_1]
+xmin = 430
+ymin = 391
+xmax = 2560
+ymax = 1300
+
+[section_2]
+xmin = 430
+ymin = 1301
+xmax = 2560
+ymax = 2210
+
+[section_3]
+xmin = 430
+ymin = 2301
+xmax = 3100
+ymax = 3300
