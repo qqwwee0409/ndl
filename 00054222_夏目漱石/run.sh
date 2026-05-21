@@ -1,9 +1,14 @@
 #
+ychar=12
 # ndl=1883179
-# miniocr 漱石全集_$ndl --begin 0010_0000 --end 0019_0000 --output $ndl --ychar $*
+# ocr 漱石全集_$ndl --begin 0010_0000 --end 0019_0000 --output $ndl --ychar 14 $*
 
-# ndl=1883288
-# miniocr 漱石全集_$ndl --begin 0011_0000 --end 0020_0000 --output $ndl --ychar 16 $*
+# ndl=1883187
+# ocr 漱石全集_$ndl --begin 0170_0000 --end 0179_0000 --output $ndl --ychar $ychar $*
 
-ndl=1888306
-miniocr 漱石全集_$ndl --begin 0016_0000 --end 0020_0000 --output $ndl --ychar15  $*
+ndl=1883288
+ocr 漱石全集_$ndl --begin 0021_0000 --end 0030_0000 --output $ndl --ychar $ychar $*
+
+# ndl=1883306
+# ocr 漱石全集_$ndl --begin 0021_0000 --end 0030_0000 --output $ndl \
+#     --ychar 12  --choon $* 
