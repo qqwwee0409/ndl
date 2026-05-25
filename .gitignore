@@ -1,5 +1,8 @@
 *.wiki
 *.pdf
+*.zip
+*.jpg
+*.jp2
 .codex
 tmp/
 jpg/
